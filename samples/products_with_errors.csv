@@ -1,0 +1,16 @@
+sku,name,description,price,currency,category_name,stock,image_url,is_active,brand,warranty_months,model_number
+ER-001,Корректный товар,Описание,1000.00,RUB,Аксессуары,10,https://example.com/img/er-001.jpg,true,Anker,12,A1234
+
+ER-002,Неверное количество полей,Описание,1000.00,RUB
+,Пустой артикул,Описание,1000.00,RUB,Аксессуары,10,https://example.com/img/er-003.jpg,true,Anker,12,A1235
+ER-004,,Описание,1000.00,RUB,Аксессуары,10,https://example.com/img/er-004.jpg,true,Anker,12,A1236
+ER-005,Нечисловая цена,Описание,abc,RUB,Аксессуары,10,https://example.com/img/er-005.jpg,true,Anker,12,A1237
+ER-006,Нулевая цена,Описание,0,RUB,Аксессуары,10,https://example.com/img/er-006.jpg,true,Anker,12,A1238
+ER-007,Отрицательный остаток,Описание,1000.00,RUB,Аксессуары,-5,https://example.com/img/er-007.jpg,true,Anker,12,A1239
+ER-008,Нечисловой остаток,Описание,1000.00,RUB,Аксессуары,много,https://example.com/img/er-008.jpg,true,Anker,12,A1240
+ER-009,Неверный is_active,Описание,1000.00,RUB,Аксессуары,10,https://example.com/img/er-009.jpg,да,Anker,12,A1241
+ER-010,Пустой бренд,Описание,1000.00,RUB,Аксессуары,10,https://example.com/img/er-010.jpg,true,,12,A1242
+ER-011,Гарантия вне диапазона,Описание,1000.00,RUB,Аксессуары,10,https://example.com/img/er-011.jpg,true,Anker,61,A1243
+ER-012,Нечисловая гарантия,Описание,1000.00,RUB,Аксессуары,10,https://example.com/img/er-012.jpg,true,Anker,год,A1244
+ER-001,Дубликат артикула,Описание,1000.00,RUB,Аксессуары,10,https://example.com/img/er-013.jpg,true,Anker,12,A1245
+ER-014,,Описание,-1,RUB,Аксессуары,-1,https://example.com/img/er-014.jpg,maybe,,100,A1246

@@ -1,0 +1,302 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 70px;
+  min-height: 100vh;
+  background: linear-gradient(160deg, #eef2ff 0%, #fdf2f8 50%, #ecfeff 100%) fixed;
+  color: #1f2937;
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #8b5cf6;
+}
+
+.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+  color: var(--bs-secondary-color);
+  text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+  text-align: start;
+}
+
+.page-title {
+  font-weight: 800;
+  background: linear-gradient(90deg, #4f46e5, #db2777);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.app-card {
+  border: 0;
+  border-radius: 1rem;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(79, 70, 229, 0.12);
+}
+
+.btn-gradient {
+  color: #fff;
+  border: 0;
+  border-radius: 999px;
+  padding: 0.55rem 1.5rem;
+  font-weight: 600;
+  background: linear-gradient(90deg, #4f46e5, #7c3aed, #db2777);
+  background-size: 150% 100%;
+  transition: background-position 0.3s ease, transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+.btn-gradient:hover {
+  color: #fff;
+  background-position: 100% 0;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(124, 58, 237, 0.35);
+}
+
+.btn-outline-violet {
+  color: #6d28d9;
+  border: 1px solid #a78bfa;
+  border-radius: 999px;
+  background: #fff;
+}
+
+.btn-outline-violet:hover {
+  color: #fff;
+  border-color: transparent;
+  background: linear-gradient(90deg, #4f46e5, #db2777);
+}
+
+.hero {
+  border-radius: 1.5rem;
+  padding: 3rem 1.5rem;
+  color: #fff;
+  text-align: center;
+  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 45%, #db2777 100%);
+  box-shadow: 0 20px 45px rgba(124, 58, 237, 0.35);
+}
+
+.hero h1 {
+  font-weight: 800;
+}
+
+.hero-emoji {
+  font-size: 3.5rem;
+  line-height: 1;
+}
+
+.hero .btn-light {
+  border-radius: 999px;
+  font-weight: 600;
+  padding: 0.6rem 1.6rem;
+}
+
+.feature-card {
+  height: 100%;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.feature-card:hover {
+  color: #fff;
+  transform: translateY(-4px);
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.2);
+}
+
+.feature-blue {
+  background: linear-gradient(135deg, #3b82f6, #6366f1);
+}
+
+.feature-pink {
+  background: linear-gradient(135deg, #ec4899, #f97316);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+.stat-tile {
+  border-radius: 1rem;
+  padding: 1.25rem 1.5rem;
+  color: #fff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.14);
+}
+
+.stat-tile .stat-label {
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+
+.stat-tile .stat-value {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.stat-total {
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+}
+
+.stat-success {
+  background: linear-gradient(135deg, #22c55e, #15803d);
+}
+
+.stat-error {
+  background: linear-gradient(135deg, #f87171, #b91c1c);
+}
+
+.file-card {
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 1rem;
+  background: #fff;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 6px 18px rgba(79, 70, 229, 0.1);
+  transition: border-color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+.file-card:hover {
+  border-color: #a78bfa;
+  transform: translateY(-2px);
+}
+
+.file-card.is-selected {
+  border-color: #7c3aed;
+  box-shadow: 0 10px 25px rgba(124, 58, 237, 0.25);
+}
+
+.file-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: #fff;
+  background: linear-gradient(90deg, #4f46e5, #7c3aed);
+}
+
+.file-card code {
+  display: block;
+  margin-top: 0.5rem;
+  word-break: break-all;
+  color: #be185d;
+}
+
+.product-card {
+  height: 100%;
+  border: 0;
+  border-radius: 1rem;
+  background: #fff;
+  overflow: hidden;
+  box-shadow: 0 10px 28px rgba(79, 70, 229, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px rgba(79, 70, 229, 0.22);
+}
+
+.product-card-top {
+  height: 6px;
+}
+
+.product-price {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #4f46e5;
+}
+
+.product-meta {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.2rem 0.75rem;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.product-meta dt {
+  font-weight: 600;
+  color: #6b7280;
+}
+
+.product-meta dd {
+  margin: 0;
+  text-align: right;
+  word-break: break-word;
+}
+
+.product-description {
+  color: #4b5563;
+  font-size: 0.9rem;
+}
+
+.category-badge {
+  display: inline-block;
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.cat-0 { background: #4f46e5; }
+.cat-1 { background: #db2777; }
+.cat-2 { background: #0891b2; }
+.cat-3 { background: #16a34a; }
+.cat-4 { background: #ea580c; }
+.cat-5 { background: #7c3aed; }
+.cat-6 { background: #ca8a04; }
+.cat-7 { background: #dc2626; }
+
+.top-0 { background: linear-gradient(90deg, #4f46e5, #818cf8); }
+.top-1 { background: linear-gradient(90deg, #db2777, #f472b6); }
+.top-2 { background: linear-gradient(90deg, #0891b2, #22d3ee); }
+.top-3 { background: linear-gradient(90deg, #16a34a, #4ade80); }
+.top-4 { background: linear-gradient(90deg, #ea580c, #fb923c); }
+.top-5 { background: linear-gradient(90deg, #7c3aed, #a78bfa); }
+.top-6 { background: linear-gradient(90deg, #ca8a04, #facc15); }
+.top-7 { background: linear-gradient(90deg, #dc2626, #f87171); }
+
+.summary-pill {
+  display: inline-block;
+  padding: 0.5rem 1.1rem;
+  border-radius: 999px;
+  font-weight: 500;
+  color: #fff;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.summary-count {
+  background: linear-gradient(90deg, #3b82f6, #6366f1);
+}
+
+.summary-value {
+  background: linear-gradient(90deg, #ec4899, #f97316);
+}
+
+.error-table thead th {
+  color: #fff;
+  background: linear-gradient(90deg, #ef4444, #db2777);
+  border: 0;
+}

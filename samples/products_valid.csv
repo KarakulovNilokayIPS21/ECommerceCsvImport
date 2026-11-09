@@ -1,0 +1,6 @@
+sku,name,description,price,currency,category_name,stock,image_url,is_active,brand,warranty_months,model_number
+EL-001,Смартфон Galaxy S24,"Экран 6.2"", 8 ГБ ОЗУ, 256 ГБ памяти",79990.00,RUB,Смартфоны,25,https://example.com/img/el-001.jpg,true,Samsung,12,SM-S921B
+EL-002,Ноутбук ProBook 450,"15.6"", Intel Core i5, 16 ГБ, SSD 512 ГБ","64990,50",RUB,Ноутбуки,10,https://example.com/img/el-002.jpg,1,HP,24,450-G10
+EL-003,"Наушники беспроводные, чёрные","Bluetooth 5.3, шумоподавление",12990,,Аксессуары,40,https://example.com/img/el-003.jpg,true,Sony,12,
+EL-004,Телевизор OLED 55,"4K, Smart TV, HDR",89990.99,RUB,,5,https://example.com/img/el-004.jpg,0,LG,36,OLED55C3
+EL-005,Планшет Tab A9,"Экран 11"", 8 ГБ ОЗУ",24990,USD,Планшеты,0,https://example.com/img/el-005.jpg,false,Samsung,0,SM-X110

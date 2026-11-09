@@ -1,0 +1,5 @@
+sku,name,description,price,currency,category_name,stock,image_url,is_active,brand,warranty_months,model_number
+IP-001,Корректный товар,Описание,1500.00,RUB,Аксессуары,10,https://example.com/img/ip-001.jpg,true,Anker,12,A2000
+IP-002,Нечисловая цена,Описание,abc,RUB,Аксессуары,10,https://example.com/img/ip-002.jpg,true,Anker,12,A2001
+IP-003,Нулевая цена,Описание,0,RUB,Аксессуары,10,https://example.com/img/ip-003.jpg,true,Anker,12,A2002
+IP-004,Отрицательная цена,Описание,-100,RUB,Аксессуары,10,https://example.com/img/ip-004.jpg,true,Anker,12,A2003

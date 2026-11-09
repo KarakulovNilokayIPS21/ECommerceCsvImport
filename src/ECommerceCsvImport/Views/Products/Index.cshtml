@@ -1,0 +1,91 @@
+@using ECommerceCsvImport.Services
+@using System.Globalization
+@model ProductsIndexViewModel
+@{
+    ViewData["Title"] = "Список товаров";
+    var ruCulture = CultureInfo.GetCultureInfo("ru-RU");
+    const int paletteSize = 8;
+}
+
+<h1 class="page-title mb-4">Список товаров</h1>
+
+<div class="app-card p-3 mb-4">
+    <form method="get" asp-controller="Products" asp-action="Index" class="row g-2">
+        <div class="col-md-4">
+            <input type="text" name="search" value="@Model.Search" class="form-control" placeholder="Поиск по названию" />
+        </div>
+        <div class="col-md-3">
+            <select name="category" class="form-select">
+                <option value="">Все категории</option>
+                @foreach (var categoryName in Model.Categories)
+                {
+                    <option value="@categoryName" selected="@string.Equals(categoryName, Model.Category, StringComparison.OrdinalIgnoreCase)">@categoryName</option>
+                }
+            </select>
+        </div>
+        <div class="col-md-3">
+            <select name="sort" class="form-select">
+                <option value="">Без сортировки</option>
+                <option value="@ProductCatalog.SortPriceAscending" selected="@(Model.Sort == ProductCatalog.SortPriceAscending)">Цена: по возрастанию</option>
+                <option value="@ProductCatalog.SortPriceDescending" selected="@(Model.Sort == ProductCatalog.SortPriceDescending)">Цена: по убыванию</option>
+            </select>
+        </div>
+        <div class="col-md-2">
+            <button type="submit" class="btn btn-gradient w-100">Применить</button>
+        </div>
+    </form>
+</div>
+
+<p class="d-flex flex-wrap gap-2 mb-4">
+    <span class="summary-pill summary-count"><strong>Товаров:</strong> @Model.TotalCount</span>
+    <span class="summary-pill summary-value"><strong>Общая стоимость остатков:</strong> @Model.TotalValue.ToString("N2", ruCulture)</span>
+</p>
+
+@if (Model.Products.Count == 0)
+{
+    <div class="alert alert-info">Товары не найдены. Загрузите данные на странице импорта.</div>
+}
+else
+{
+    <div class="row g-4">
+        @foreach (var product in Model.Products)
+        {
+            var colorIndex = product.CategoryName.Sum(symbol => symbol) % paletteSize;
+            <div class="col-12 col-md-6 col-xl-4">
+                <article class="product-card d-flex flex-column">
+                    <div class="product-card-top top-@colorIndex"></div>
+                    <div class="p-3 d-flex flex-column flex-grow-1">
+                        <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
+                            <span class="category-badge cat-@colorIndex">@product.CategoryName</span>
+                            @if (product.IsActive)
+                            {
+                                <span class="badge text-bg-success">Активен: Да</span>
+                            }
+                            else
+                            {
+                                <span class="badge text-bg-secondary">Активен: Нет</span>
+                            }
+                        </div>
+                        <h2 class="h5 mb-1">@product.Name</h2>
+                        <p class="product-description mb-3">@product.Description</p>
+                        <div class="product-price mb-3">@product.Price.ToString("N2", ruCulture) @product.Currency</div>
+                        <dl class="product-meta mt-auto">
+                            <dt>Артикул</dt>
+                            <dd><code>@product.Sku</code></dd>
+                            <dt>Бренд</dt>
+                            <dd>@product.Brand</dd>
+                            <dt>Модель</dt>
+                            <dd>@(product.ModelNumber ?? "—")</dd>
+                            <dt>Остаток</dt>
+                            <dd>@product.StockQuantity</dd>
+                            <dt>Гарантия, мес.</dt>
+                            <dd>@product.WarrantyMonths</dd>
+                            <dt>Изображение</dt>
+                            <dd>@product.ImageUrl</dd>
+                        </dl>
+                    </div>
+                </article>
+            </div>
+        }
+    </div>
+}

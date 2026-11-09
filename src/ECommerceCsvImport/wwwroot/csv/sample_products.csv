@@ -1,0 +1,19 @@
+sku,name,description,price,currency,category_name,stock,image_url,is_active,brand,warranty_months,model_number
+EL-001,Смартфон Galaxy S24,"Экран 6.2"", 8 ГБ ОЗУ, 256 ГБ памяти",79990.00,RUB,Смартфоны,25,https://example.com/img/el-001.jpg,true,Samsung,12,SM-S921B
+EL-002,Смартфон iPhone 15,"Экран 6.1"", 128 ГБ, чип A16",89990.00,RUB,Смартфоны,18,https://example.com/img/el-002.jpg,true,Apple,12,A3090
+EL-003,Смартфон Redmi Note 13,"Экран 6.67"", 8/256 ГБ, AMOLED",21990.00,RUB,Смартфоны,60,https://example.com/img/el-003.jpg,true,Xiaomi,12,23129RAA4G
+EL-004,Ноутбук ProBook 450,"15.6"", Intel Core i5, 16 ГБ, SSD 512 ГБ","64990,50",RUB,Ноутбуки,10,https://example.com/img/el-004.jpg,1,HP,24,450-G10
+EL-005,Ноутбук MacBook Air 13,"Чип M3, 16 ГБ, SSD 512 ГБ",139990.00,RUB,Ноутбуки,7,https://example.com/img/el-005.jpg,true,Apple,12,MXCT3
+EL-006,Ноутбук игровой Legion 5,"RTX 4060, Ryzen 7, 32 ГБ",154990.00,RUB,Ноутбуки,4,https://example.com/img/el-006.jpg,true,Lenovo,24,82RD00A1RK
+EL-007,Планшет Tab A9,"Экран 11"", 8 ГБ ОЗУ",24990.00,RUB,Планшеты,30,https://example.com/img/el-007.jpg,true,Samsung,12,SM-X110
+EL-008,Планшет iPad 10.9,"Wi-Fi, 64 ГБ, Touch ID",44990.00,RUB,Планшеты,12,https://example.com/img/el-008.jpg,true,Apple,12,MPQ03
+EL-009,Телевизор OLED 55,"4K, Smart TV, HDR",89990.99,RUB,Телевизоры,5,https://example.com/img/el-009.jpg,true,LG,36,OLED55C3
+EL-010,Телевизор QLED 65,"4K, 120 Гц, Tizen",109990.00,RUB,Телевизоры,3,https://example.com/img/el-010.jpg,true,Samsung,24,QE65Q80C
+EL-011,"Наушники беспроводные, чёрные","Bluetooth 5.3, шумоподавление",12990.00,RUB,Аудио,40,https://example.com/img/el-011.jpg,true,Sony,12,WH-CH720N
+EL-012,Наушники AirPods Pro 2,"Активное шумоподавление, USB-C",24990.00,RUB,Аудио,22,https://example.com/img/el-012.jpg,true,Apple,12,MTJV3
+EL-013,Портативная колонка Charge 5,"IP67, 20 часов работы",14990.00,RUB,Аудио,15,https://example.com/img/el-013.jpg,true,JBL,12,CHARGE5
+EL-014,Умные часы Watch 6,"AMOLED 1.5"", пульсометр, NFC",27990.00,RUB,Умные часы,20,https://example.com/img/el-014.jpg,true,Samsung,12,SM-R940
+EL-015,Фитнес-браслет Band 8,"AMOLED, 16 дней автономности",3490.00,RUB,Умные часы,80,https://example.com/img/el-015.jpg,true,Xiaomi,12,M2239B1
+EL-016,Игровая консоль PlayStation 5,"SSD 825 ГБ, 4K, геймпад DualSense",59990.00,RUB,Игровые консоли,6,https://example.com/img/el-016.jpg,true,Sony,12,CFI-1216A
+EL-017,Внешний аккумулятор PowerCore 20000,"20000 мА·ч, USB-C, 22.5 Вт",3990.00,RUB,Аксессуары,100,https://example.com/img/el-017.jpg,true,Anker,18,A1384
+EL-018,Беспроводная мышь MX Master 3S,"8000 dpi, тихие клики",9990.00,RUB,Аксессуары,0,https://example.com/img/el-018.jpg,false,Logitech,24,910-006559

@@ -1,0 +1,6 @@
+sku,name,description,price,currency,category_name,stock,image_url,is_active,brand,warranty_months,model_number
+TV-001,Смартфон Pixel 8,"Экран 6.2"", 128 ГБ",59990.00,RUB,Смартфоны,10,https://example.com/img/tv-001.jpg,true,Google,12,GKWS6
+TV-002,Ноутбук ZenBook 14,"OLED, Core i7, 16 ГБ","99990,50",RUB,Ноутбуки,5,https://example.com/img/tv-002.jpg,1,ASUS,24,UX3405MA
+TV-003,"Наушники проводные, белые","Jack 3.5 мм",1990,,Аудио,50,https://example.com/img/tv-003.jpg,true,Sony,0,
+TV-004,Монитор 27 4K,"IPS, 60 Гц",32990.00,RUB,,8,https://example.com/img/tv-004.jpg,false,Dell,60,S2721QS
+TV-005,Роутер Archer AX55,"Wi-Fi 6, 3000 Мбит/с",6990.00,RUB,Сетевое оборудование,0,https://example.com/img/tv-005.jpg,0,TP-Link,36,AX55

@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Главная";
+}
+
+<section class="hero mb-5">
+    <div class="hero-emoji mb-3" aria-hidden="true">&#128241;&#128187;&#127911;</div>
+    <h1 class="display-5 mb-3">Магазин электроники</h1>
+    <p class="lead mb-4">Загрузите каталог из CSV-файла и просматривайте товары в удобных карточках.</p>
+    <a class="btn btn-light btn-lg" asp-controller="Products" asp-action="Import">Начать импорт</a>
+</section>
+
+<div class="row g-4">
+    <div class="col-md-6">
+        <a class="feature-card feature-blue" asp-controller="Products" asp-action="Import">
+            <div class="feature-icon mb-3" aria-hidden="true">&#128229;</div>
+            <h2 class="h4">Импорт товаров</h2>
+            <p class="mb-0">Выберите тестовый файл или укажите путь к своему CSV и получите отчёт об ошибках.</p>
+        </a>
+    </div>
+    <div class="col-md-6">
+        <a class="feature-card feature-pink" asp-controller="Products" asp-action="Index">
+            <div class="feature-icon mb-3" aria-hidden="true">&#128717;</div>
+            <h2 class="h4">Список товаров</h2>
+            <p class="mb-0">Фильтруйте по названию и категории, сортируйте по цене, следите за остатками.</p>
+        </a>
+    </div>
+</div>

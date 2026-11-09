@@ -1,0 +1,4 @@
+sku,name,description,price,currency,category_name,stock,image_url,is_active,brand,warranty_months,model_number
+WR-001,Гарантия на границе,Описание,9990.00,RUB,Телевизоры,3,https://example.com/img/wr-001.jpg,true,LG,60,32LQ6300
+WR-002,Гарантия больше максимума,Описание,9990.00,RUB,Телевизоры,3,https://example.com/img/wr-002.jpg,true,LG,61,32LQ6301
+WR-003,Отрицательная гарантия,Описание,9990.00,RUB,Телевизоры,3,https://example.com/img/wr-003.jpg,true,LG,-1,32LQ6302

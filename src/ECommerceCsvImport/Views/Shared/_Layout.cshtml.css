@@ -1,0 +1,59 @@
+﻿a.navbar-brand {
+  white-space: normal;
+}
+
+.app-navbar {
+  background: linear-gradient(90deg, #4f46e5 0%, #7c3aed 50%, #db2777 100%);
+  box-shadow: 0 6px 20px rgba(79, 70, 229, 0.35);
+}
+
+.app-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+
+.app-brand-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.app-nav-link {
+  color: rgba(255, 255, 255, 0.9);
+  border-radius: 999px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: 0.25rem;
+  transition: background-color 0.2s ease;
+}
+
+.app-nav-link:hover,
+.app-nav-link:focus {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.app-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  line-height: 60px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.92);
+  background: linear-gradient(90deg, #4f46e5 0%, #7c3aed 50%, #db2777 100%);
+}
+
+@media (max-width: 575.98px) {
+  .app-footer {
+    line-height: 1.4;
+    padding: 1rem 0;
+  }
+}

@@ -1,0 +1,4 @@
+sku,name,description,price,currency,category_name,stock,image_url,is_active,brand,warranty_months,model_number
+BA-001,Корректный статус,Описание,2490.00,RUB,Аксессуары,20,https://example.com/img/ba-001.jpg,false,Baseus,12,BS-01
+BA-002,Статус по-русски,Описание,2490.00,RUB,Аксессуары,20,https://example.com/img/ba-002.jpg,да,Baseus,12,BS-02
+BA-003,Статус yes,Описание,2490.00,RUB,Аксессуары,20,https://example.com/img/ba-003.jpg,yes,Baseus,12,BS-03

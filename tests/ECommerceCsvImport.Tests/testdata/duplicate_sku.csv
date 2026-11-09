@@ -1,0 +1,4 @@
+sku,name,description,price,currency,category_name,stock,image_url,is_active,brand,warranty_months,model_number
+DS-001,Смартфон Galaxy A55,Описание,34990.00,RUB,Смартфоны,10,https://example.com/img/ds-001.jpg,true,Samsung,12,SM-A556E
+DS-002,Планшет Tab S9 FE,Описание,39990.00,RUB,Планшеты,5,https://example.com/img/ds-002.jpg,true,Samsung,12,SM-X510
+ds-001,Дубликат артикула,Описание,1000.00,RUB,Смартфоны,1,https://example.com/img/ds-003.jpg,true,Samsung,12,SM-A556E

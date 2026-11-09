@@ -1,0 +1,91 @@
+@model ImportViewModel
+@{
+    ViewData["Title"] = "Импорт товаров";
+}
+
+<h1 class="page-title mb-4">Импорт товаров из CSV</h1>
+
+<div class="app-card p-4 mb-4">
+    <form asp-controller="Products" asp-action="Import" method="post">
+        <div class="mb-3">
+            <label asp-for="FilePath" class="form-label fw-semibold">Путь к CSV-файлу</label>
+            <input asp-for="FilePath" class="form-control form-control-lg" placeholder="C:\data\products.csv" />
+        </div>
+        <button type="submit" class="btn btn-gradient">Импортировать</button>
+    </form>
+</div>
+
+@if (Model.SampleFiles.Count > 0)
+{
+    <h2 class="h4 mb-3">Тестовые файлы</h2>
+    <div class="row g-3 mb-4">
+        @foreach (var samplePath in Model.SampleFiles)
+        {
+            <div class="col-md-6">
+                <div class="file-card h-100 d-flex justify-content-between align-items-start gap-3" data-path="@samplePath" tabindex="0" role="button">
+                    <div class="flex-grow-1">
+                        <span class="file-badge">@System.IO.Path.GetFileName(samplePath)</span>
+                        <code>@samplePath</code>
+                    </div>
+                    <form asp-controller="Products" asp-action="Import" method="post">
+                        <input type="hidden" name="filePath" value="@samplePath" />
+                        <button type="submit" class="btn btn-sm btn-outline-violet">Импортировать</button>
+                    </form>
+                </div>
+            </div>
+        }
+    </div>
+}
+
+@if (Model.Result is { } result)
+{
+    <h2 class="h4 mb-3">Результат импорта</h2>
+    <div class="row g-3 mb-4">
+        <div class="col-sm-4">
+            <div class="stat-tile stat-total">
+                <div class="stat-label">Всего</div>
+                <div class="stat-value">@result.TotalRows</div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="stat-tile stat-success">
+                <div class="stat-label">Успешно</div>
+                <div class="stat-value">@result.ImportedCount</div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="stat-tile stat-error">
+                <div class="stat-label">Ошибки</div>
+                <div class="stat-value">@result.ErrorCount</div>
+            </div>
+        </div>
+    </div>
+
+    @if (result.ErrorCount > 0)
+    {
+        <h2 class="h4 mb-3">Список ошибок</h2>
+        <div class="app-card p-2 table-responsive">
+            <table class="table table-striped align-middle mb-0 error-table">
+                <thead>
+                    <tr>
+                        <th>Номер строки</th>
+                        <th>Описание ошибки</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var error in result.Errors)
+                    {
+                        <tr>
+                            <td>@(error.RowNumber > 0 ? error.RowNumber.ToString() : "—")</td>
+                            <td>@error.Message</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-success">Импорт выполнен без ошибок.</div>
+    }
+}

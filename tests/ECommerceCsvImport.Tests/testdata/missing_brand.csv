@@ -1,0 +1,3 @@
+sku,name,description,price,currency,category_name,stock,image_url,is_active,brand,warranty_months,model_number
+MB-001,Колонка с брендом,Описание,4990.00,RUB,Аудио,10,https://example.com/img/mb-001.jpg,true,JBL,12,GO3
+MB-002,Колонка без бренда,Описание,2990.00,RUB,Аудио,10,https://example.com/img/mb-002.jpg,true,,12,NONAME-1
